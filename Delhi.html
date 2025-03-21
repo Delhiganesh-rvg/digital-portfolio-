@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Delhi Ganesh S</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #941919;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border: 3px solid white;
+        }
+
+        .header-content h1 {
+            margin: 10px 0 5px;
+            font-size: 2rem;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Styling */
+        section {
+            background-color: white;
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #941919;
+            padding-bottom: 5px;
+            color: #941919;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #941919;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .download-button:hover {
+            background-color: #700f0f;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="/storage/emulated/0/Download/IMG_20250316_102252-removebg-preview.png" alt="Profile Picture" class="profile-picture">
+        <div class="header-content">
+            <h1> Delhi Ganesh S</h1>
+            <p>Bachelor of computer application | Web Developer</p>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate <b>web developer</b> and Bca with a strong background in building high-performance applications. 
+           With 7+ years of experience, I specialize in creating user-friendly, scalable, and secure web solutions.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <p><b>Madras University</b> - Bachelor of computer application</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>React.js & MERN Stack</li>
+            <li>Cloud Computing</li>
+            <li>Python & Machine Learning</li>
+            <li>Spring Framework</li>
+            <li>Java, C++, JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="#">E-Cart Website</a></li>
+            <li><a href="#">Cloud Security with IBM</a></li>
+            <li><a href="#">IBM Chatbot</a></li>
+            <li><a href="#">College Portal System</a></li>
+        </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" style="text-align: center;">
+        <h2>Resume</h2>
+        <a href="/storage/emulated/0/Download/delhiganesh (1).pdf" target="_blank" class="download-button">Download CV</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Delhi ganesh S</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const sectionId = this.getAttribute('href').substring(1);
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    window.scrollTo({ top: section.offsetTop - 50, behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
